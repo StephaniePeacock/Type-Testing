@@ -1,0 +1,103 @@
+:root {
+    --space-card: 3rem;
+    --body-font: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    --display-font: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+    --base-font-size: 10px;
+    --scaled-font: clamp(1.2rem, 3vw, 1.8rem);
+    --line-height: calc(var(--scaled-font)*1.6);
+    --measure: clamp(35ch, 80vw, 75ch);
+}
+
+*, *::before, *::after { 
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: var(--base-font-size);
+}
+
+body {
+    background-color: white;
+    font-size: var(--scaled-font);
+    line-height: var(--line-height);
+}
+
+main { 
+    display: grid; 
+    gap: var(--space-card); 
+    max-width: 100rem; 
+    margin: 2rem auto; 
+    margin: 0 auto;
+}
+
+.card { 
+    padding: var(--space-card); 
+    background: rgb(242, 243, 241); 
+    border: 1px solid #d0d0d0; 
+    border-radius: .5rem; 
+    font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--display-font);
+}
+
+p {
+    max-width: var(--measure);
+}
+
+figure {
+    margin: 2rem auto;
+    font-family: var(--display-font);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    font-family: var(--display-font);
+}
+
+button {
+    width: 20rem;
+    background-color: darkgoldenrod;
+    border-radius: .25rem;
+    padding: .75rem;
+    font-family: var(--display-font);
+    font-size: var(--scaled-font);
+}
+
+#first {
+    --body-font: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    --display-font: 'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, serif;
+}
+
+#second {
+    --body-font: Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    --display-font: 'Palatino Linotype', 'URW Palladio L', P052, serif;
+}
+
+#third {
+    --body-font: 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    --display-font: 'URW Palladio L', P052, serif;
+}
+
+#fourth {
+    --body-font: 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
+    --display-font: P052, serif;
+}
+
+#fifth {
+    --body-font: 'Nimbus Sans', Arial, sans-serif;
+    --display-font: serif;
+}
+
+#sixth {
+    --body-font: Arial, sans-serif;
+    --display-font: serif;
+}
+
+#seventh {
+    --body-font: sans-serif;
+    --display-font: serif;
+}
